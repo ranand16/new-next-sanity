@@ -22,8 +22,13 @@ const project = {
       fields: [{ name: "alt", title: "alt", type: "string" }],
     },
     {
-      name: "url",
-      title: "URL",
+      name: "demoUrl",
+      title: "Demo URL",
+      type: "url",
+    },
+    {
+      name: "gitUrl",
+      title: "Github URL",
       type: "url",
     },
     {
