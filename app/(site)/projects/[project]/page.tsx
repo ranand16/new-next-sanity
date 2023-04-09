@@ -28,18 +28,18 @@ export default async function project({ params }: Props) {
           Check project out!
         </Link>
       </header>
-
       <div className="text-lg text-gray-700 mt-5">
         {<PortableText value={project.content} />}
       </div>
-
-      <Image
-        src={project.image}
-        alt={project.name}
-        width={1920}
-        height={1080}
-        className="mt-10 border-2 border-gray-700 object-cover rounded-xl "
-      />
+      {project.image && (
+        <Image
+          src={project.image}
+          alt={project.name}
+          width={1920}
+          height={1080}
+          className="mt-10 border-2 border-gray-700 object-cover rounded-xl "
+        />
+      )}
     </div>
   );
 }
